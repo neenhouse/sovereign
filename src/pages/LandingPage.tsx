@@ -105,6 +105,9 @@ export default function LandingPage() {
     <div className="landing">
       {/* Hero */}
       <section className="hero" aria-labelledby="hero-heading">
+        <div className="hero-bg-image" aria-hidden="true">
+          <img src="/hero-og.webp" alt="" loading="eager" width="1200" height="630" />
+        </div>
         <div className="hero-glow" aria-hidden="true" />
         <div className="container hero-content">
           <div className="hero-badge">
