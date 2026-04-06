@@ -111,10 +111,10 @@
 }
 
 .btn-primary:hover {
-  opacity: 0.9;
-  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.35);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
   color: white;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  filter: brightness(1.08);
 }
 
 .btn-secondary {
@@ -163,6 +163,7 @@
   padding: var(--space-6);
   background: var(--color-bg-elevated);
   border: 1px solid var(--color-border);
+  border-left: 2px solid transparent;
   border-radius: var(--radius-xl);
   text-align: left;
   transition: all var(--transition-base);
@@ -170,8 +171,9 @@
 
 .feature-card:hover {
   border-color: var(--color-border-hover);
+  border-left-color: var(--color-primary);
   box-shadow: var(--shadow-glow);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 .feature-icon {
@@ -216,11 +218,25 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-6);
+  position: relative;
+}
+
+.steps-grid::before {
+  content: '';
+  position: absolute;
+  top: 1.8rem;
+  left: calc(33.33% + var(--space-3));
+  right: calc(33.33% + var(--space-3));
+  height: 1px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .step-card {
   padding: var(--space-6);
   text-align: left;
+  position: relative;
 }
 
 .step-number {
@@ -263,15 +279,18 @@
 .stat-value {
   font-size: 3rem;
   font-weight: 800;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   line-height: 1;
   margin-bottom: var(--space-2);
+  font-variant-numeric: tabular-nums;
 }
 
 .stat-label {
   color: var(--color-text-muted);
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 /* CTA */

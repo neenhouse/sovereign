@@ -112,8 +112,8 @@ export default function LandingPage() {
             Open-Source Personal AI
           </div>
           <h1 id="hero-heading">
-            <span className="gradient-text">Your AI.</span>{' '}
-            <span className="gradient-text">Your Hardware.</span>{' '}
+            Your AI.{' '}
+            Your Hardware.{' '}
             <span className="gradient-text">Your Data.</span>
           </h1>
           <p className="hero-subtitle">

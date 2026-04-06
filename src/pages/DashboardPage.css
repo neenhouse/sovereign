@@ -120,7 +120,7 @@
 .dashboard-tab.active {
   background: var(--color-bg-surface);
   color: var(--color-text);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-sm), inset 0 -2px 0 var(--color-primary);
 }
 
 .dashboard-content {
@@ -508,6 +508,7 @@
 .model-card {
   background: var(--color-bg-elevated);
   border: 1px solid var(--color-border);
+  border-top: 2px solid transparent;
   border-radius: var(--radius-lg);
   padding: var(--space-5);
   display: flex;
@@ -518,7 +519,9 @@
 
 .model-card:hover {
   border-color: var(--color-border-hover);
+  border-top-color: var(--color-primary);
   box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
 .model-card-header {
