@@ -106,7 +106,10 @@ export default function LandingPage() {
       {/* Hero */}
       <section className="hero" aria-labelledby="hero-heading">
         <div className="hero-bg-image" aria-hidden="true">
-          <img src="/hero-og.webp" alt="" loading="eager" width="1200" height="630" />
+          <video autoPlay muted loop playsInline poster="/hero-og.webp" style={{width:'100%',height:'100%',objectFit:'cover'}}>
+            <source src="/hero-og.webm" type="video/webm" />
+            <source src="/hero-og.mp4" type="video/mp4" />
+          </video>
         </div>
         <div className="hero-glow" aria-hidden="true" />
         <div className="container hero-content">
