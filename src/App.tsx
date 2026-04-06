@@ -86,7 +86,7 @@ function LoadingFallback() {
         }} />
         Loading...
       </div>
-      <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
+      <style>{`@keyframes spin { to { transform: rotate(360deg); } } @media (prefers-reduced-motion: reduce) { .spin { animation: none !important; } }`}</style>
     </div>
   )
 }
@@ -94,8 +94,9 @@ function LoadingFallback() {
 function AppContent() {
   return (
     <div className="app">
+      <a href="#main-content" className="skip-link">Skip to main content</a>
       <Header />
-      <main className="main-content">
+      <main id="main-content" className="main-content">
         <Suspense fallback={<LoadingFallback />}>
           <Routes>
             <Route path="/" element={<LandingPage />} />

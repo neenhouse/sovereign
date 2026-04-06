@@ -4,7 +4,7 @@
 
 .dashboard {
   padding: var(--space-5);
-  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100dvh - var(--header-height));
 }
 
 .dashboard-layout {
@@ -13,7 +13,7 @@
   gap: var(--space-5);
   max-width: var(--max-width);
   margin: 0 auto;
-  min-height: calc(100vh - var(--header-height) - var(--space-10));
+  min-height: calc(100dvh - var(--header-height) - var(--space-10));
 }
 
 /* Sidebar */
@@ -135,7 +135,7 @@
 .chat-panel {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - var(--header-height) - 140px);
+  height: calc(100dvh - var(--header-height) - 140px);
   background: var(--color-bg-elevated);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
@@ -768,7 +768,7 @@
   }
 
   .chat-panel {
-    height: calc(100vh - var(--header-height) - 120px);
+    height: calc(100dvh - var(--header-height) - 120px);
   }
 
   .chat-message {
