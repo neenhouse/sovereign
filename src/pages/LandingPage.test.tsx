@@ -14,9 +14,10 @@ function renderWithRouter() {
 describe('LandingPage', () => {
   it('renders the hero heading', () => {
     renderWithRouter()
-    expect(screen.getByText('Your AI.')).toBeInTheDocument()
-    expect(screen.getByText('Your Hardware.')).toBeInTheDocument()
-    expect(screen.getByText('Your Data.')).toBeInTheDocument()
+    const heading = screen.getByRole('heading', { level: 1 })
+    expect(heading).toHaveTextContent('Your AI.')
+    expect(heading).toHaveTextContent('Your Hardware.')
+    expect(heading).toHaveTextContent('Your Data.')
   })
 
   it('renders all four feature cards', () => {
