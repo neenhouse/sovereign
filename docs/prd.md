@@ -2,14 +2,21 @@
 
 ## Overview
 
-Sovereign is a web-based dashboard and marketing site for an open-source personal AI stack. The product consists of a public landing page and an interactive dashboard that demonstrates the platform's capabilities.
+Sovereign is a web-based dashboard and marketing site for an open-source personal AI platform. The product consists of a public landing page that communicates the context-ownership thesis and an interactive dashboard that demonstrates the platform's capabilities.
+
+## Positioning
+
+Sovereign's landing page communicates a specific strategic narrative: as AI models commoditize, value migrates to context — the persistent understanding of you. Sovereign lets you own that context permanently while treating models as swappable commodities.
+
+**Primary audience:** Developers who want full control of their AI stack.
+**Secondary audience:** Privacy-conscious professionals handling sensitive data.
 
 ## Features
 
 ### 1. Landing Page
-- Hero section with "Your AI. Your Hardware. Your Data." headline
+- Hero section with context-ownership messaging
 - Gradient text effects with emerald-to-blue palette
-- Feature cards: Privacy-First, Offline Capable, Open Source, Community Models
+- Feature cards: Context Ownership, Local-First, Model Freedom, Community Ecosystem
 - How-it-works section (3-step flow)
 - Social proof / stats section
 - Footer with navigation and links
