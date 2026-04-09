@@ -1,73 +1,84 @@
-# React + TypeScript + Vite
+# Sovereign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Own your context in a world of commoditized AI.
 
-Currently, two official plugins are available:
+Sovereign is an open-source personal AI platform that separates your context from the model. Your accumulated intelligence — documents, habits, preferences, communication style — stays under your control permanently. Models are swappable commodities.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Why
 
-## React Compiler
+Every AI assistant you use builds an understanding of you: your work patterns, your writing style, the connections between your documents. Over months, this becomes a second brain.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Today, that second brain belongs to someone else. When you stop paying, the accumulated intelligence disappears. When they change terms, your data serves their purposes.
 
-## Expanding the ESLint configuration
+Sovereign inverts this. You own your context graph. Models plug in and out.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Quick Start
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# Prerequisites: Node.js 24+, pnpm
+git clone https://github.com/your-org/sovereign.git
+cd sovereign
+pnpm install
+pnpm dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Commands
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+pnpm dev           # Start dev server
+pnpm build         # TypeScript check + Vite production build
+pnpm test          # Run tests (Vitest)
+pnpm lint          # Lint (ESLint)
 ```
+
+## Tech Stack
+
+- **Frontend**: React 19, TypeScript, Vite 8
+- **Styling**: CSS custom properties (emerald/blue design system, dark theme)
+- **Testing**: Vitest + React Testing Library
+- **Deploy**: Cloudflare Pages via GitHub Actions
+- **Tooling**: pnpm, mise (runtime versions)
+
+## Project Structure
+
+```
+sovereign/
+  docs/
+    vision.md          # Strategic vision, business model, moat analysis
+    prd.md             # Product requirements, GTM, feature phases
+  src/
+    pages/
+      LandingPage.tsx  # Context-ownership landing page
+      DashboardPage.tsx # AI dashboard demo (chat, knowledge, models, privacy)
+    App.tsx            # Router and layout
+  CLAUDE.md            # Development conventions
+```
+
+## Vision
+
+As AI models commoditize, value migrates from the model to the context — the persistent understanding of YOU. Sovereign's thesis: separate the context from the model. You own your context graph permanently, and the model is a replaceable commodity.
+
+Read the full vision: [docs/vision.md](docs/vision.md)
+
+## Roadmap
+
+**Phase 1 (Current):** Landing page + interactive dashboard demo. Establishing the narrative.
+
+**Phase 2:** Core platform — context graph engine, model orchestration, integration framework.
+
+**Phase 3:** Sovereign Cloud (managed hosting) + community marketplace.
+
+See the full product requirements: [docs/prd.md](docs/prd.md)
+
+## Contributing
+
+Sovereign is early-stage and open to contributors. The best way to start:
+
+1. Read [docs/vision.md](docs/vision.md) to understand the thesis
+2. Read [docs/prd.md](docs/prd.md) to understand what we're building
+3. Check open issues for good first contributions
+4. Run `pnpm dev` and explore the codebase
+
+## License
+
+MIT

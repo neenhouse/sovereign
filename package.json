@@ -1,7 +1,9 @@
 {
   "name": "sovereign",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "Open-source personal AI platform — own your context, swap your models",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
