@@ -55,48 +55,48 @@ function ArrowRightIcon() {
 const features = [
   {
     icon: <ShieldIcon />,
-    title: 'Privacy-First',
-    description: 'Zero telemetry. Zero cloud. Your conversations and data never leave your network.',
+    title: 'Your Context, Forever',
+    description: 'Your personal knowledge graph — documents, habits, preferences — stays under your control and grows more valuable over time.',
   },
   {
     icon: <WifiOffIcon />,
-    title: 'Offline Capable',
-    description: 'Full AI functionality without an internet connection. Your assistant works when the cloud doesn\'t.',
+    title: 'Local-First',
+    description: 'Full AI on your hardware, no internet required. Cloud features are optional, encrypted, and you hold the only key.',
   },
   {
     icon: <CodeIcon />,
-    title: 'Open Source',
-    description: 'Every line of code is auditable. No black boxes, no hidden data collection, no surprises.',
+    title: 'Any Model, Anytime',
+    description: 'Swap models freely as they improve. No vendor lock-in. Open-source, auditable, and always your choice.',
   },
   {
     icon: <UsersIcon />,
-    title: 'Community Models',
-    description: 'A marketplace of open-source models vetted by the community. Choose what fits your needs.',
+    title: 'Community Ecosystem',
+    description: 'A marketplace of community-contributed models, integrations, and skill packs. The platform gets better as the community grows.',
   },
 ]
 
 const steps = [
   {
     number: '01',
-    title: 'Install on Your Hardware',
-    description: 'One command to set up Sovereign on any Linux machine, Raspberry Pi, or home server.',
+    title: 'Install Sovereign',
+    description: 'One command to set up on any Linux machine, Raspberry Pi, or home server. Or start with Sovereign Cloud.',
   },
   {
     number: '02',
-    title: 'Choose Your Models',
-    description: 'Browse the community marketplace and install models optimized for your hardware.',
+    title: 'Build Your Context',
+    description: 'Index your documents, connect your calendar, and let Sovereign learn your patterns — all locally.',
   },
   {
     number: '03',
-    title: 'Own Your AI',
-    description: 'Your assistant learns from your documents, habits, and preferences — all locally.',
+    title: 'Own Your Intelligence',
+    description: 'Your AI gets smarter every day. Swap models anytime. Your accumulated context is always yours.',
   },
 ]
 
 const stats = [
-  { value: '100%', label: 'Data Privacy' },
+  { value: '100%', label: 'Context Ownership' },
   { value: '50+', label: 'Open Models' },
-  { value: '12k+', label: 'Community Members' },
+  { value: '0', label: 'Cloud Lock-in' },
   { value: '<2s', label: 'Local Inference' },
 ]
 
@@ -119,12 +119,12 @@ export default function LandingPage() {
           </div>
           <h1 id="hero-heading">
             Your AI.{' '}
-            Your Hardware.{' '}
-            <span className="gradient-text">Your Data.</span>
+            Your Context.{' '}
+            <span className="gradient-text">Your Future.</span>
           </h1>
           <p className="hero-subtitle">
-            The open-source personal AI stack that runs entirely on your own hardware.
-            No corporate cloud. No data harvesting. No compromises.
+            The open-source personal AI platform where your context — documents, habits, preferences — stays
+            yours forever. Models come and go. Your intelligence compounds.
           </p>
           <div className="hero-actions">
             <Link to="/dashboard" className="btn btn-primary">
@@ -144,9 +144,9 @@ export default function LandingPage() {
       {/* Features */}
       <section className="features" aria-labelledby="features-heading">
         <div className="container">
-          <h2 id="features-heading">Built for the privacy-conscious</h2>
+          <h2 id="features-heading">The platform for context ownership</h2>
           <p className="section-subtitle">
-            Everything you need to run a personal AI assistant without sacrificing your data.
+            Own your AI intelligence. Swap models freely. Your context graph grows more valuable every day.
           </p>
           <div className="features-grid">
             {features.map((feature) => (
@@ -198,8 +198,8 @@ export default function LandingPage() {
       <section className="cta-section" aria-labelledby="cta-heading">
         <div className="container">
           <div className="cta-card">
-            <h2 id="cta-heading">Take back control of your AI</h2>
-            <p>Join thousands of privacy-conscious users running their own AI stack.</p>
+            <h2 id="cta-heading">Own your AI intelligence</h2>
+            <p>Join developers building on the platform where your context is yours forever.</p>
             <Link to="/dashboard" className="btn btn-primary btn-lg">
               Get Started Free
               <ArrowRightIcon />
@@ -213,7 +213,7 @@ export default function LandingPage() {
         <div className="container footer-content">
           <div className="footer-brand">
             <span className="gradient-text" style={{ fontWeight: 700, fontSize: '1.25rem' }}>Sovereign</span>
-            <p>Your AI. Your Hardware. Your Data.</p>
+            <p>Your AI. Your Context. Your Future.</p>
           </div>
           <nav className="footer-nav" aria-label="Footer navigation">
             <div className="footer-col">

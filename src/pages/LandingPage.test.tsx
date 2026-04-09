@@ -16,29 +16,29 @@ describe('LandingPage', () => {
     renderWithRouter()
     const heading = screen.getByRole('heading', { level: 1 })
     expect(heading).toHaveTextContent('Your AI.')
-    expect(heading).toHaveTextContent('Your Hardware.')
-    expect(heading).toHaveTextContent('Your Data.')
+    expect(heading).toHaveTextContent('Your Context.')
+    expect(heading).toHaveTextContent('Your Future.')
   })
 
   it('renders all four feature cards', () => {
     renderWithRouter()
-    expect(screen.getByText('Privacy-First')).toBeInTheDocument()
-    expect(screen.getByText('Offline Capable')).toBeInTheDocument()
-    expect(screen.getByText('Open Source')).toBeInTheDocument()
-    expect(screen.getByText('Community Models')).toBeInTheDocument()
+    expect(screen.getByText('Your Context, Forever')).toBeInTheDocument()
+    expect(screen.getByText('Local-First')).toBeInTheDocument()
+    expect(screen.getByText('Any Model, Anytime')).toBeInTheDocument()
+    expect(screen.getByText('Community Ecosystem')).toBeInTheDocument()
   })
 
   it('renders the how-it-works section with three steps', () => {
     renderWithRouter()
-    expect(screen.getByText('Install on Your Hardware')).toBeInTheDocument()
-    expect(screen.getByText('Choose Your Models')).toBeInTheDocument()
-    expect(screen.getByText('Own Your AI')).toBeInTheDocument()
+    expect(screen.getByText('Install Sovereign')).toBeInTheDocument()
+    expect(screen.getByText('Build Your Context')).toBeInTheDocument()
+    expect(screen.getByText('Own Your Intelligence')).toBeInTheDocument()
   })
 
   it('renders social proof stats', () => {
     renderWithRouter()
     expect(screen.getByText('100%')).toBeInTheDocument()
-    expect(screen.getByText('Data Privacy')).toBeInTheDocument()
+    expect(screen.getByText('Context Ownership')).toBeInTheDocument()
     expect(screen.getByText('50+')).toBeInTheDocument()
   })
 
@@ -49,7 +49,7 @@ describe('LandingPage', () => {
 
   it('renders the CTA section', () => {
     renderWithRouter()
-    expect(screen.getByText('Take back control of your AI')).toBeInTheDocument()
+    expect(screen.getByText('Own your AI intelligence')).toBeInTheDocument()
     expect(screen.getByText('Get Started Free')).toBeInTheDocument()
   })
 
@@ -60,7 +60,7 @@ describe('LandingPage', () => {
 
   it('has accessible section headings', () => {
     renderWithRouter()
-    expect(screen.getByText('Built for the privacy-conscious')).toBeInTheDocument()
+    expect(screen.getByText('The platform for context ownership')).toBeInTheDocument()
     expect(screen.getByText('Up and running in minutes')).toBeInTheDocument()
   })
 })
